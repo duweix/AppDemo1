@@ -1,5 +1,6 @@
 // webpack.config.js
 const path = require('path')
+const webpack = require('webpack')
 
 const _entry = {
   index: './src/index.js'
@@ -34,7 +35,13 @@ const _module = {
   ]
 }
 
-const _plugins = []
+const _plugins = [
+  /*
+  new webpack.optimize.CommonsChunkPlugin({
+    name: 'vendor'
+  })
+  */
+]
 
 const _devServer = {
   contentBase: path.join(__dirname, 'public'),

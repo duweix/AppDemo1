@@ -1,13 +1,7 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { render } from 'react-dom'
 
-import { Button } from 'element-react'
-
-import 'element-theme-default'
-
-ReactDOM.render((
-  <div>
-    <h2 style={{color: 'red'}}>Hello, World!</h2>
-    <Button type="primary">Hello</Button>
-  </div>
+render((
+  React.DOM.div(null,
+  React.DOM.h2(null, "Hello, World!"))
 ), document.getElementById("root"))
