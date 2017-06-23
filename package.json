@@ -1,0 +1,24 @@
+{
+  "name": "AppDemo1",
+  "version": "1.0.0",
+  "description": "AppDemo1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duweix/AppDemo1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duweix/AppDemo1/issues"
+  },
+  "homepage": "https://github.com/duweix/AppDemo1#readme",
+  "devDependencies": {
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.5.0"
+  }
+}
