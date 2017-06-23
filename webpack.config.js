@@ -6,7 +6,7 @@ const _entry = {
 }
 
 const _output = {
-  path: path.join(__dirname, 'build'),
+  path: path.resolve(__dirname, 'build'),
   filename: '[name].js',
   publicPath: '/'
 }
@@ -17,6 +17,10 @@ const _module = {
       test: /\.js$/,
       loader: 'babel-loader?presets[]=es2015&presets[]=react',
       exclude: /node_modules/
+    },
+    {
+      test: /\.css$/,
+      use: ['style-loader', 'css-loader', 'postcss-loader']
     }
   ]
 }
